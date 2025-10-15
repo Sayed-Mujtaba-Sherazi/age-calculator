@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Age Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<noscript>JavaScript is required for this app to work.</noscript>
+
+<main class="app" role="main">
+  <section class="card" aria-labelledby="app-title">
+    <header class="card__header">
+      <h1 id="app-title" class="title">Age Calculator</h1>
+      <p class="subtitle">Enter your date of birth to calculate your exact age.</p>
+    </header>
+
+    <form id="age-form" class="form" novalidate>
+      <div class="inputs" role="group" aria-labelledby="dob-label">
+        <span id="dob-label" class="sr-only">Date of Birth inputs</span>
+
+        <div class="field">
+          <label for="day">Day</label>
+          <input id="day" name="day" inputmode="numeric" autocomplete="bday-day" placeholder="DD" aria-describedby="day-error" maxlength="2">
+          <p id="day-error" class="error" aria-live="assertive"></p>
+        </div>
+
+        <div class="field">
+          <label for="month">Month</label>
+          <input id="month" name="month" inputmode="numeric" autocomplete="bday-month" placeholder="MM" aria-describedby="month-error" maxlength="2">
+          <p id="month-error" class="error" aria-live="assertive"></p>
+        </div>
+
+        <div class="field">
+          <label for="year">Year</label>
+          <input id="year" name="year" inputmode="numeric" autocomplete="bday-year" placeholder="YYYY" aria-describedby="year-error" maxlength="4">
+          <p id="year-error" class="error" aria-live="assertive"></p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn" aria-label="Calculate age">Calculate</button>
+        <button type="reset" class="btn btn--ghost" aria-label="Reset form">Reset</button>
+      </div>
+
+      <div id="form-error" class="form-error" aria-live="assertive"></div>
+    </form>
+
+    <section class="results" aria-live="polite" aria-atomic="true">
+      <div class="result">
+        <div class="result__value" id="years-value" data-value="--">--</div>
+        <div class="result__label">Years</div>
+      </div>
+      <div class="result">
+        <div class="result__value" id="months-value" data-value="--">--</div>
+        <div class="result__label">Months</div>
+      </div>
+      <div class="result">
+        <div class="result__value" id="days-value" data-value="--">--</div>
+        <div class="result__label">Days</div>
+      </div>
+    </section>
+  </section>
+
+  <footer class="footer">
+    <p>Copyright by Syed Mujtaba Sherazi</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
