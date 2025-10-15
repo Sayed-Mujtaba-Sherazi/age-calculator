@@ -21,7 +21,7 @@ A simple web application that calculates a user's age based on their date of bir
 
 1. Clone the repository
 
-   git clone https://github.com/your-username/age-calculator.git
+   git clone https://github.com/Sayed-Mujtaba-Sherazi/age-calculator
 
 2. Open the index.html file in your web browser
 
@@ -29,4 +29,4 @@ A simple web application that calculates a user's age based on their date of bir
 
 Once deployed using GitHub Pages, the live demo will be available at:
 
-https://your-username.github.io/age-calculator/
+https://sayed-mujtaba-sherazi.github.io/age-calculator/
